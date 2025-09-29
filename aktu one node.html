@@ -1,0 +1,149 @@
+<!--
+  Harsh Tripathi - Single-file Portfolio
+  - Open this HTML file in a browser to preview
+  - Edit content directly in the canvas code editor, then save & refresh
+  - If you want a multi-page site, React version, or deploy steps, tell me
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harsh Tripathi — Portfolio</title>
+  <meta name="description" content="Portfolio of Harsh Tripathi — B.Tech student, data enthusiast." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,system-ui,Arial;color:#e6eef6;background:linear-gradient(180deg,#071025 0%, #07182b 100%);-webkit-font-smoothing:antialiased}
+    header{padding:28px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#021225;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    .container{max-width:980px;margin:22px auto;padding:20px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .badges{display:flex;gap:8px;flex-wrap:wrap}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .contact-list{list-style:none;padding:0;margin:12px 0 0}
+    .contact-list li{margin:8px 0;color:var(--muted);font-size:15px}
+    .links a{display:inline-block;margin-right:10px;text-decoration:none;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.03)}
+    .nodes{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+    .node{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.02)}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .project{padding:12px;border-radius:10px;background:var(--glass)}
+    footer{margin:28px 0 60px;text-align:center;color:var(--muted)}
+    @media (max-width:920px){.hero{grid-template-columns:1fr}.projects{grid-template-columns:repeat(2,1fr)}.nodes{grid-template-columns:1fr}}
+    @media (max-width:560px){.projects{grid-template-columns:1fr}}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none}
+    .primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021225}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">HT</div>
+      <div>
+        <div style="font-weight:700;color:#e6eef6">Harsh Tripathi</div>
+        <div style="font-size:13px;color:var(--muted)">B.Tech student • Aspiring Data Analyst</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#aktu">AKTU</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Hi — I'm Harsh Tripathi</h1>
+        <p class="lead">B.Tech student in Computer Science. I build small data projects, dashboards and web pages. Open to internships and collaborations.</p>
+        <div class="badges">
+          <span class="badge">B.Tech</span>
+          <span class="badge">Computer Science</span>
+          <span class="badge">Data Analytics</span>
+          <span class="badge">Web Dev</span>
+        </div>
+
+        <h3 style="margin-top:16px;color:#e6eef6">AKTU / Nodes</h3>
+        <p class="lead">Quick links to what you asked for — "AKTU: One node" and "B.Tech: All nodes" appear below. Edit content as needed.</p>
+        <div class="nodes">
+          <div class="node">
+            <strong>AKTU — One Node</strong>
+            <p style="margin:8px 0;color:var(--muted);font-size:14px">Information and important links for your AKTU (university) single-node view. Add enrollment/semester/roll no. here.</p>
+          </div>
+          <div class="node">
+            <strong>B.Tech — All Nodes</strong>
+            <p style="margin:8px 0;color:var(--muted);font-size:14px">All B.Tech related nodes: semesters, subjects, projects, results. Use this area to add details you want to show publicly.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:16px;color:#e6eef6">Skills & Tools</h3>
+        <div style="margin-top:8px" class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">HTML/CSS</span>
+        </div>
+
+      </div>
+
+      <aside class="card" style="position:relative">
+        <h3 style="margin:0 0 8px">Contact</h3>
+        <p class="lead">Reach out for projects, internships or collaborations.</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> 6390503738</li>
+          <li><strong>Email:</strong> <a href="mailto:k.tripathiharsh2005@gmail.com">tripathiharsh2005@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harsh-tripathi-2ab741330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">/harsh-tripathi-2ab741330</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/harshtriphati6390" target="_blank">/harshtriphati6390</a></li>
+        </ul>
+
+        <div style="margin-top:14px">
+          <a class="btn primary" href="#contact">Contact Me</a>
+          <a class="btn" href="#projects">My Projects</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="card" style="margin-top:18px">
+      <h2 style="margin:0 0 8px">Projects</h2>
+      <p class="lead">A few examples — replace these with real project descriptions and links to GitHub or live demos.</p>
+      <div class="projects">
+        <div class="project">
+          <strong>Project 1</strong>
+          <p style="margin:8px 0;color:var(--muted)">Short description of a data project or web app. Add repo link.</p>
+        </div>
+        <div class="project">
+          <strong>Project 2</strong>
+          <p style="margin:8px 0;color:var(--muted)">Short description of a dashboard or visualization.</p>
+        </div>
+        <div class="project">
+          <strong>Project 3</strong>
+          <p style="margin:8px 0;color:var(--muted)">Short description of another project or coursework.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin:0 0 8px">Get in touch</h2>
+      <p class="lead">Want changes? Tell me and I will update the page here. You can also copy this file and host it on GitHub Pages or Netlify.</p>
+
+      <form onsubmit="event.preventDefault();alert('Thanks! use the contact info provided to reach Harsh.');" style="margin-top:12px;display:grid;gap:8px">
+        <input placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6" />
+        <input placeholder="Your email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6" />
+        <textarea placeholder="Message" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6"></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Harsh Tripathi — Built with ❤️. View or edit the source in the canvas.
+  </footer>
+</body>
+</html>
